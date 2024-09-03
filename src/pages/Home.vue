@@ -18,7 +18,7 @@ const currencyList = computed(()=> store.getters['currency/getCurrencyList'])
     <div class="right">
       <p> Её курс по отношению  к другим  валютам </p>
       <ul>
-        <li v-for="item in currencyList">
+        <li v-for="item in currencyList" v-key="item.name">
           <p>{{item.name.toUpperCase()}}: {{item.value}}</p>
         </li>
       </ul>

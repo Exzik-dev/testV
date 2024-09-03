@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from "@/components/Forms/Button/Button.vue";
 import Icon from "@/assets/images/down.svg?component";
-import {computed, onBeforeUnmount, onMounted, ref} from "vue";
+import { ref} from "vue";
 
 interface Props {
   options: string[]

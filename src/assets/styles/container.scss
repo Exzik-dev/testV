@@ -1,0 +1,143 @@
+@mixin mobile-s {
+  @media screen and (max-width: 321px) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media screen and (max-width: 376px) {
+    @content;
+  }
+}
+
+@mixin mobile-ml {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media screen and (max-width: 481px) {
+    @content;
+  }
+}
+
+// используем, но проверяем на 320
+@mixin mobile-xl {
+  @media screen and (max-width: 541px) {
+    @content;
+  }
+}
+
+// используем
+@mixin tablet-s {
+  @media screen and (max-width: 668px) {
+    @content;
+  }
+}
+
+@mixin tablet-ms {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+// используем
+@mixin tablet-m {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin tablet-ml {
+  @media screen and (max-width: 870px) {
+    @content;
+  }
+}
+
+@mixin tablet-ml-custom {
+  @media screen and (max-width: 970px) {
+    @content;
+  }
+}
+
+// используем
+@mixin tablet-l {
+  @media screen and (max-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin tablet-ls {
+  @media screen and (max-width: 1038px) {
+    @content;
+  }
+}
+
+@mixin laptop-s {
+  @media screen and (max-width: 1281px) {
+    @content;
+  }
+}
+
+@mixin laptop-m {
+  @media screen and (max-width: 1367px) {
+    @content;
+  }
+}
+
+// используем
+@mixin laptop-l {
+  @media screen and (max-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin desktop-s {
+  @media screen and (max-width: 1537px) {
+    @content;
+  }
+}
+
+@mixin desktop-m {
+  @media screen and (max-width: 1601px) {
+    @content;
+  }
+}
+
+@mixin desktop-mcl {
+  @media screen and (max-width: 1701px) {
+    @content;
+  }
+}
+
+@mixin desktop-ml {
+  @media screen and (max-width: 1890px) {
+    @content;
+  }
+}
+
+@mixin desktop-l {
+  @media screen and (max-width: 1920px) {
+    @content;
+  }
+}
+
+
+@mixin container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+
+  @include tablet-l {
+    padding: 0 40px;
+  }
+
+  @include tablet-l {
+    padding: 0 32px;
+  }
+
+  @include tablet-s {
+    padding: 0 16px;
+  }
+}
